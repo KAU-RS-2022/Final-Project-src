@@ -7,8 +7,16 @@
 
 https://drive.google.com/drive/folders/1PMRRWkTosjai4f-7eFvms0DJ2t6hbFhU?usp=sharing
 
-_colab /gdrive 경로에 yolo, resnet 폴더를 위치해 주세요  
-img.zip 파일은 /gdrive/resnet/img 위치로 압축을 해제해 주세요_
+_google_colab 환경을 기반으로 하였습니다.   
+/gdrive 경로에 yolo, resnet 폴더를 위치해 주세요  
+img.zip 파일은 /gdrive/resnet 안에 압축을 해제해 주세요_
+
+<br/>
+
+_based on google_colab env.   
+please put yolo, resnet folder in path '/gdrive'  
+please unzip img.zip file in /gdrive/resnet_
+
 
 ### yolo folder
 
