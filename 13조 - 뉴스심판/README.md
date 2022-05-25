@@ -70,7 +70,8 @@ img.zip 파일은 /gdrive/resnet/img 위치로 압축을 해제해 주세요_
     + run final model
     <br/>
     <br/>
+    
     + "OSError: [Errno 5] Input/output error:"  
     https://research.google.com/colaboratory/faq.html#drive-timeout  
     img 폴더에 사진이 너무 많아서 생기는 gdrive 오류입니다. 현 섹션을 다시 실행하면 정상 작동 합니다.  
-    the error comes from gdrive because there are too many files in 'img' folder, and it will be automatically solved if you run this part of the code again
+    The error comes from gdrive because there are too many files in 'img' folder. It will be automatically solved if you run this section again
