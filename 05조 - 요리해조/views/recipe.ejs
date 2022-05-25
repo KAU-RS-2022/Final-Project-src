@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레시피</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/recipe.css">
+
+    <script type="text/javascript" src="/js/recipe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gugi&display=swap" rel="stylesheet">
+
+    <script>
+        var id = 'whddnbae';
+        function recommend_food(){
+            // alert('요리추천')
+            $.ajax({
+                type : "POST",
+                url : "/recipe/rs_model",
+                async : false,
+                data : {
+                    "id" : id,
+                },
+                success: function(data){
+                    console.log(data);
+                    recommend_recipe(id, data);
+                },
+                error : function(a, b, c){
+                    alert('error');
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            // console.log($('#id').val());
+            make_recipe();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="menu">
+        <%- include('menu.ejs') %>
+    </div>
+    <div id="contents">
+        <div>
+            제외하고 싶은 식재료
+            <input type="button" value="요리추천" onclick="recommend_food()">
+        </div>
+        <table id="recipe_table"></table>
+
+    </div>
+</body>
+</html>

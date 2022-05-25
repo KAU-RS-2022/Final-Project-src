@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.box{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 500px;
+    transform: translate(-50%,-50%);
+}
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+input[type="text"]{
+    background: #fff;
+    width: 170px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px ;
+}
+input[type="button"]{
+    position: relative;
+    border-radius: 25px;
+    width: 75px;
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #ffc107;
+}
+input[type="button"]:hover{
+    background: #ff5722;
+}

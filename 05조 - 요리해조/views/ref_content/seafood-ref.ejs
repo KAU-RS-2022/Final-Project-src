@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해물류-냉장</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>    
+    <link rel="stylesheet" href="/css/popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script>
+        var ings, list;     //ings는 기존 재료, list는 그를 담기 위한 list 그릇
+        var html = ''; 
+        var i, ing;
+        var id = 'whddnbae';
+
+        function ing_add(type){
+            ing = $('.ing').val();
+            if(ing==''){
+                alert('재료를 입력하세요!');
+                return 0;
+            }
+            else{
+                if(ings == null | ings == ''){
+                    ings = ing;
+                }
+                else{
+                    ings = ings + ',' + ing;
+                }
+            }
+            console.log(ings);
+            $.ajax({
+                type : "POST",
+                url : "/ref_content/add_del",
+                async : false,
+                data : {
+                    "id" : id,      //id
+                    "type" : type,    // 종류
+                    "ings" : ings   // 기존 재료
+                },
+                success: function(data){
+                    location.reload();
+                },
+                error : function(a, b, c){
+                    alert('error');
+                }
+            });
+        }
+
+        function ing_del(type){
+            ing = $('.ing').val();
+            console.log(ing);
+            if(ing==''){
+                alert('재료를 입력하세요!');
+                return 0;
+            }
+            else{
+                //  선택한 재료가 없으면
+                if(ings.indexOf(ing)+1){
+                    if(ings.indexOf(',')+1 == 0){
+                        ings = '';
+                    }
+                    // 맨 마지막이 아니면
+                    else if(!(ings.indexOf(ing+',')+1)){
+                        // alert('맨마지막 있음');
+                        ings = ings.replace(','+ing,'');
+                    }
+                    else{
+                        // alert('맨마지막 아님');
+                        ings = ings.replace(ing+',','');
+                    }
+                }
+                else{
+                    alert('해당 재료가 없습니다.')
+                    return 0;
+                }
+            }
+            console.log(ings);
+            // 빼는거지만 
+            $.ajax({
+                type : "POST",
+                url : "/ref_content/add_del",
+                async : false,
+                data : {
+                    "id" : id,      //id
+                    "type" : type,    // 종류
+                    "ings" : ings   // 기존 재료
+                },
+                success: function(data){
+                    location.reload();
+                },
+                error : function(a, b, c){
+                    alert('error');
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            $.ajax({
+                type : "POST",
+                url : "/ref_content/type",
+                async : false,
+                data : {
+                    "id" : id,
+                    "type" : "seafood"
+                },
+                success: function(data){
+                    console.log(data);
+                    ings = data.seafood;
+                    if (ings == null | ings == ''){
+                        list = 'nothing';
+                    }
+                    else{
+                        list = ings;
+                    }
+                    list = list.split(',');
+                    console.log(list);
+                    for (i = 0 ; i < list.length ; i++){
+                        html += `<li class="li_ing">${list[i]}</li>`
+                    }
+                    $('.ul_ing').html(html);
+                },
+                error : function(a, b, c){
+                    alert('error');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="contents">
+        <input type='text' class="ing">
+        <input type="button" value="추가" onclick="ing_add('seafood');">
+        <input type="button" value="삭제" onclick="ing_del('seafood');">
+        <p class="main">
+            <ul class="ul_ing">
+            </ul>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 냉장고</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>    
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/ref.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gugi&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="menu">
+        <%- include('menu.ejs') %>
+    </div>
+    
+    <div class="container">
+        <nav>
+            <label for="btn" class="button">나의 냉장고
+                <span class="fas fa-caret-down"></span>
+            </label>
+            <input type="checkbox" id="btn">
+            <ul class="menu">
+                <li>
+                    <label for="btn-3" class="second">냉장실
+                        <span class="fas fa-caret-down"></span>
+                    </label>
+                    <input type="checkbox" id="btn-3">
+                    <ul>
+                        <li><a onclick="javascript:openWindowPop('/ref_content/meat-ref', 'popup');">육류</a></li>
+                        <li><a onclick="javascript:openWindowPop('/ref_content/seafood-ref', 'popup');">해물류</a></li>                        
+                        <li><a onclick="javascript:openWindowPop('/ref_content/fruit-ref', 'popup');">과/채류</a></li>                        
+                        <li><a onclick="javascript:openWindowPop('/ref_content/dairy-ref', 'popup');">유제품류</a></li>                        
+                        <li><a onclick="javascript:openWindowPop('/ref_content/etc-ref', 'popup');">기타</a></li>                        
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.btn').click(function(){
+                $(this).next('.menu').slideToggle();
+            })
+        })
+    </script>
+    <!-- 팝업 -->
+    <script>
+        function openWindowPop(url, name){
+            var options = 'top=10, left=10, width=500, height=600, status=no, menubar=no, toolbar=no, resizable=no';
+            window.open(url, name, options);   
+        }
+    </script>
+</body>
+</html>
