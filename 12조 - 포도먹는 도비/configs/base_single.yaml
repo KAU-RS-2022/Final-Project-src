@@ -1,0 +1,93 @@
+SYS:
+  EXP_NAME: 'base_single_100_L2'
+  GPUS: (0)
+  WORKERS: 8
+  PIN_MEMORY: True
+  LOCAL_RANK: ''
+
+TRAIN:
+  RESUME: ''
+  START_EPOCH: 1
+  END_EPOCH: 100
+  PRINT_FREQ: 50
+  BATCH_SIZE: 256
+  BATCH_SIZE_VAL: 16
+  SEED: 8967
+  CUDNN:
+    BENCHMARK: True
+    DETERMINISTIC: False
+    ENABLED: True
+  OPT: 
+    NAME: 'Adam'
+    LR: 0.001
+    MOMENTUM: 0.9
+
+MODEL:
+  NAME: 'fullmodel'
+  BB_PRETRAINED: ''
+  FREEZE_BN: ''
+  NBB_KEYWORDS: []
+  LATERAL_CONNECTION: True
+  POSITION_ENCODING: False
+  
+  SEG:
+    NAME: 'ctx48'
+    FREEZE: True
+    WEIGHT_PATH: 'models/ctx48_7795.pth.tar'
+    LATTERAL: [48, 64, 80, 96, 112]
+
+  DEPTH:
+    NAME: 'depth'
+    CH:
+      BB: [3, 18,36]
+      BASE: [36, 72, 120, 180, 252]
+      SELF_CTX: [54, 72, 90, 108, 126]
+      SEG_CTX: [18, 24, 30, 36, 42]
+      GLOB_CTX: [36, 48, 60, 72, 84]
+      LATTERAL: [72, 120, 180, 252, 336]
+  POSE:
+    NAME: 'pose'
+    CH:
+      BB: [6, 12, 24]
+      BASE: [24, 48, 80, 120, 168, 224, 288]
+      SELF_CTX: [24, 32, 40, 48, 56, 64]
+LOSS:
+  DISP_SMOOTH: 0.001
+  METRIC: ['de/abs_rel', 'de/sq_rel', 'de/rms', 'de/log_rms', 'da/a1', 'da/a2', 'da/a3', 'silog']
+
+DATA:
+  SET: 'kittiDataset'
+  SPLIT: 'eigen_zhou'
+  ROOT: ''
+  TRAIN_SPLIT: 'train'
+  VAL_SPLIT: 'val'
+  TEST_SPLIT: 'test'
+  FRAME_IDS: [0, -1, 1, 's']
+  STEREO_OPTION: True
+  SHUFFLE: False
+  DROP_LAST: True
+  HEIGHT: 320
+  WIDTH: 1024
+  MIN_DEPTH: 0.1
+  MAX_DEPTH: 100
+  AUG:
+    BRIGHTNESS: [0.8, 1.2]
+    CONTRAST: [0.8, 1.2]
+    SATURATION: [0.8, 1.2]
+    HUE: [-0.1, 0.1]
+
+# * 2/4 channels
+# BB: [3, 12,24]
+# BASE: [24, 48, 80, 120, 168]
+# SELF_CTX: [36, 48, 60, 72, 84]
+# SEG_CTX: [12, 16, 20, 24, 28]
+# GLOB_CTX: [24, 32, 40, 48, 56]
+# LATTERAL: [48, 80, 120, 168, 224] 
+
+# * 4/4 channels
+# BB: [3,24,48]
+# BASE: [48, 96, 160, 240, 336]
+# SELF_CTX: [72, 96, 120, 144, 168]
+# SEG_CTX: [24, 32, 40, 48, 56]
+# GLOB_CTX: [48, 64, 80, 96, 112]
+# LATTERAL: [96, 160, 240, 336, 448]

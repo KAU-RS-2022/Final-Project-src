@@ -1,0 +1,101 @@
+id,name,producer,nation,abv,degree,sweet,acidity,body,tannin,type,price,year,ml
+141536,"Ballot Millot & Fils, Meursault 1er Perrieres",Ballot Millot  Fils,France,13.5,10~12,SWEET1,ACIDITY4,BODY4,TANNIN1,2.0,240000,2004,750
+161650,"Domaine Charlopin, Puligny Montrachet",Domaine Philippe Charlopin Parizot,France,,,SWEET1,ACIDITY4,BODY4,TANNIN1,2.0,165000,2017,750
+140216,Massolino Langhe Chardonnay,Massolino,Italy,13~14,10~12,SWEET1,ACIDITY3,BODY3,TANNIN1,2.0,0,2016,750
+161730,"Cuvage, Rose Metodo Classico",Cuvage,Italy,12~13,7~9,SWEET1,ACIDITY4,BODY2,TANNIN1,3.0,0,0,750
+164040,Louis Eschenauer Cremant de Bordeaux,GCF  GCF Group,France,11~12,6~8,SWEET1,ACIDITY4,BODY2,TANNIN1,3.0,44000,0,750
+162844,"Roger Pouillon, Brut Rose Premier Cru",Roger Pouillon,France,12,7~9,SWEET1,ACIDITY3,BODY4,TANNIN1,3.0,87000,0,750
+146962,"Greyrock, Pinot Noir",Greyrock,New Zealand,12.5,16~18,SWEET1,ACIDITY5,BODY3,TANNIN3,1.0,57000,2013,750
+164516,"Champagne Lallier, R.014 Brut",Lallier,France,,,SWEET1,ACIDITY5,BODY2,TANNIN1,3.0,200000,2014,750
+139251,"Barton & Guestier, Gold Label Medoc",Barton  Guestier,France,12.5,16~18,SWEET1,ACIDITY3,BODY3,TANNIN3,1.0,38000,2007,750
+137401,"Ruffino, Riserva Ducale Oro Chiant Classico Grand Selezione",Ruffino,Italy,14.5,15~18,SWEET1,ACIDITY3,BODY5,TANNIN4,1.0,110000,2015,750
+161841,"Footprint, Cabernet Sauvignon",African Pride Wine,the Republic of South Africa,13.9,16~18,SWEET1,ACIDITY3,BODY3,TANNIN4,1.0,22000,2019,750
+161708,"Grgich Hills, Napa Valley Fume Blanc ",Grgich Hills Estate,USA,14.1,10~12,SWEET1,ACIDITY3,BODY2,TANNIN1,2.0,85000,2017,750
+161583,Stonestreet Estate Cabernet Sauvignon,Stonestreet Estate Vineyards,USA,13.5,17~19,SWEET1,ACIDITY3,BODY5,TANNIN5,1.0,250000,2016,750
+139719,"Mcguigan, Genus 4 Shiraz",Mcguigan,Australia,13,17~19,SWEET1,ACIDITY3,BODY4,TANNIN4,1.0,0,2002,750
+166321,"Bodegas Menade, Sobrenatural",Bodegas Menade,Spain,,,SWEET1,ACIDITY4,BODY4,TANNIN1,2.0,160000,2015,750
+150238,"Handpicked, Peter Douglas Signature Cabernet Sauvignon ",Handpicked,Australia,13.8,16~18,SWEET1,ACIDITY3,BODY5,TANNIN5,1.0,0,2006,750
+164270,Chateau Montaigne,Chateau Montaigne,France,,,SWEET1,ACIDITY4,BODY3,TANNIN3,1.0,0,2015,750
+160955,Castano Coleccion,Bodegas Castano,Spain,,,SWEET1,ACIDITY3,BODY4,TANNIN3,1.0,62000,2013,750
+149149,"Domaine Philippe Pacalet, Gevrey-Chambertin 1er Cru 'Lavaux Saint Jacques'",Philippe Pacalet,France,,,SWEET1,ACIDITY4,BODY3,TANNIN3,1.0,639000,2008,750
+153840,"Bestheim, Riesling Reserve",Bestheim,France,,,SWEET1,ACIDITY4,BODY4,TANNIN1,2.0,0,2012,750
+154266,Mas Jullien Rose,Mas Jullien,France,14,12~14,SWEET2,ACIDITY3,BODY4,TANNIN1,4.0,0,2011,750
+153490,"Cevico, Terre di Pozzo Amarone della Valpolicella Classico",Cevico,Italy,15~16,16~18,SWEET2,ACIDITY2,BODY5,TANNIN3,1.0,130000,2009,750
+160014,Balan Bubble B Rosy,Balan,Italy,,,SWEET2,ACIDITY2,BODY3,TANNIN1,3.0,0,0,750
+162187,"Ca'di Rajo, Epsilon Pink Gold",Cadi Rajo Wines,Italy,11,6~8,SWEET2,ACIDITY3,BODY3,TANNIN1,3.0,62000,0,750
+140178,"Scrimaglio, Spumante Fiat",Scrimaglio,Italy,11.5,6~8,SWEET2,ACIDITY3,BODY2,TANNIN1,3.0,58000,2004,750
+137447,"Trapiche, Merlot",Trapiche,Argentina,13.5,16~19,SWEET2,ACIDITY3,BODY3,TANNIN3,1.0,0,2005,750
+156527,Kung Fu Girl Riesling,CHARLES SMITH WINES,USA,,,SWEET2,ACIDITY4,BODY3,TANNIN1,2.0,14000,2018,750
+165695,"Louis Max Sud, Le Bon Homme",Louis Max,France,12~13,8~10,SWEET2,ACIDITY3,BODY2,TANNIN1,2.0,36000,2017,750
+148191,"Vina Graduca, Red",Vina Graduca,Spain,11~12,14~16,SWEET2,ACIDITY3,BODY2,TANNIN2,1.0,0,0,750
+162296,Ciao Bianco,SRL Cantine Sgarzi Luigi SRL,Italy,10.5,8~10,SWEET2,ACIDITY2,BODY2,TANNIN1,2.0,5000,0,200
+159525,"Codorniu, Rondel Gold Semi Seco",Codorniu,Spain,11.5,6~8,SWEET2,ACIDITY2,BODY3,TANNIN1,3.0,0,0,750
+156560,"Echeverria, Valle Dorado Sauvignon Blanc",Echeverria,Chile,12~13,8~10,SWEET2,ACIDITY3,BODY2,TANNIN1,2.0,0,2018,750
+137413,Amigo Merlot,San Pedro,Chile,12~13,16~18,SWEET2,ACIDITY3,BODY3,TANNIN2,1.0,14000,2017,750
+162312,"Big House, Zinfandel",Big House,USA,13~14,16~18,SWEET2,ACIDITY2,BODY4,TANNIN3,1.0,35000,2012,750
+138695,"Eroica, Riesling",Ste Michelle Wine Estates,USA,11~12,8~10,SWEET2,ACIDITY5,BODY3,TANNIN1,2.0,0,2016,750
+163803,El Toqui Gran Reserva Merlot,Casas del Toqui,Chile,13~14,15~17,SWEET2,ACIDITY3,BODY4,TANNIN3,1.0,0,2016,750
+162675,"Huber, Riesling Engelsberg ",Weingut Markus Huber,Austria,12.5,6~8,SWEET2,ACIDITY4,BODY3,TANNIN1,2.0,59000,2018,750
+137908,Barokes Bubbly Red,Barokes,Australia,,,SWEET2,ACIDITY2,BODY3,TANNIN1,3.0,6900,0,250
+154588,"Carlo Pellegrino, Marsala Vergine Riserva Vintage",Carlo Pellegrino,Italy,19,20,SWEET2,ACIDITY2,BODY5,TANNIN1,5.0,209000,1980,750
+147789,"Kendermann, Langenbach Medium Red",Kendermann Reh Kendermann Kendermanns,Germany,9.5,15~17,SWEET2,ACIDITY4,BODY3,TANNIN4,1.0,0,0,750
+158348,Cavicchioli Fantasia Moscato Demisec,Cavicchioli,Italy,,,SWEET3,ACIDITY1,BODY1,TANNIN1,3.0,0,0,750
+146171,Tesco Cava Demi Sec,Freixenet,Spain,11.5,5~6,SWEET3,ACIDITY2,BODY2,TANNIN1,3.0,13800,2006,750
+165317,"Anecoop, Freegold Tinto",Anecoop,Spain,12~13,6~8,SWEET3,ACIDITY2,BODY2,TANNIN2,1.0,31000,0,750
+155872,Alsina & Sarda Semi-sec,Alsina  Sarda,Spain,11.5,6~8,SWEET3,ACIDITY2,BODY3,TANNIN1,3.0,38000,0,750
+140315,"Two Hands, Gnarly Dudes Shiraz",Two Hands Wines,Australia,15,16~18,SWEET3,ACIDITY3,BODY5,TANNIN3,1.0,0,2016,750
+144512,Ellerstadter Gewuerztraminer Spaetlese,Weingut Heinrich Vollmer,Germany,,,SWEET3,ACIDITY4,BODY2,TANNIN1,2.0,31000,2002,750
+162831,Sakura Wine,Shirayuri Winery,Japan,,,SWEET3,ACIDITY2,BODY2,TANNIN1,4.0,58000,0,750
+153883,"Ackerman, Le Master",Ackerman,France,12~13,6~7,SWEET3,ACIDITY3,BODY4,TANNIN1,2.0,55000,2014,750
+148900,Sangria Simo,Celler Sort Del Castell,Spain,9,6~8,SWEET3,ACIDITY2,BODY2,TANNIN1,5.0,25000,0,1000
+148019,"Carlo Rossi, Rosso Frescato",Gallo Family Vineyard  EJ Gallo Winery,USA,9~10,10~12,SWEET3,ACIDITY2,BODY2,TANNIN2,1.0,0,0,750
+148186,"Yellow Tail, Bubbles Rose",Casella Wines,Australia,11~12,7~9,SWEET3,ACIDITY2,BODY3,TANNIN1,3.0,0,2017,750
+166298,"Leonard Kreusch, Santa Anita Gluhwein",Leonard Kreusch,Germany,8~9,50~70,SWEET3,ACIDITY1,BODY4,TANNIN1,5.0,18000,0,750
+155829,VH Wiltinger Riesling Feinherb,Verinigte Hospitien,Germany,11~12,10~12,SWEET3,ACIDITY3,BODY3,TANNIN1,2.0,66000,2014,750
+145766,Amor Cabernet Sauvignon,Vina Francisco de Aguirre,Chile,10~11,8~10,SWEET3,ACIDITY2,BODY3,TANNIN2,1.0,18000,2017,750
+142831,"Yellow Tail, Bubbles",Casella Wines,Australia,12,6~8,SWEET3,ACIDITY2,BODY2,TANNIN1,3.0,22000,0,750
+145502,Adoro Semi Sweet Wine,SA Capel Vinos SA,Spain,11.5,12~14,SWEET3,ACIDITY1,BODY3,TANNIN2,1.0,20000,0,750
+165683,"Laurent Perrier, Harmony Demi Sec",Laurent Perrier,France,12~13,6~8,SWEET3,ACIDITY4,BODY2,TANNIN1,3.0,190000,0,750
+159055,Stack Wines Stormhoek  Cabernet Sauvignon,Stack Wines,the Republic of South Africa,12.5,16~18,SWEET3,ACIDITY4,BODY3,TANNIN4,1.0,17900,0,187
+141212,Vin Fou Demi Sec,Henri Maire,France,,,SWEET3,ACIDITY3,BODY2,TANNIN1,3.0,23000,0,750
+143526,"Franzia, White 3000㎖",Franzia,USA,11,10~12,SWEET3,ACIDITY2,BODY1,TANNIN1,2.0,30000,0,3000
+151920,"Vina Maipo, Moscato ",Vina Maipo,Chile,5,8~10,SWEET4,ACIDITY1,BODY1,TANNIN1,2.0,0,2011,750
+159510,"Fontanafredda, Varej Moscato d'Asti",Fontanafredda,Italy,7,6~8,SWEET4,ACIDITY2,BODY2,TANNIN1,2.0,0,2016,750
+155899,M Moscato,Casa Gualda,Spain,5.5,8~10,SWEET4,ACIDITY2,BODY2,TANNIN1,2.0,0,0,750
+149585,"Scagliola, Farfalle Moscato d'Asti",Scagliola Azienda Agricola,Italy,,,SWEET4,ACIDITY2,BODY2,TANNIN1,2.0,25000,2015,750
+164276,"Gozzelino Vini, Bruna Moscata d'Asti",Gozzelino Vini,Italy,5.5,8~10,SWEET4,ACIDITY2,BODY1,TANNIN1,2.0,34000,2018,750
+140062,"La Spinetta, Moscato d'Asti Bricco Quaglia",La Spinetta,Italy,,,SWEET4,ACIDITY2,BODY3,TANNIN1,2.0,58000,2019,750
+163250,"Accademia, Moscato Spumante Dolce",Accademia,Italy,6~7,6~8,SWEET4,ACIDITY1,BODY2,TANNIN1,3.0,50000,0,750
+165711,Bonne Chance Moscato Golden Edition,Bodegas Lopez Morenas SL,Spain,6~7,6~8,SWEET4,ACIDITY2,BODY2,TANNIN1,3.0,24800,0,750
+147844,"Distell, Table Mountain Natural Sweet Red",Distell,the Republic of South Africa,7.5,13~15,SWEET4,ACIDITY3,BODY2,TANNIN3,1.0,15000,0,750
+149446,"Mogen David, Pomegranate",Mogen David,USA,10,10~13,SWEET4,ACIDITY2,BODY4,TANNIN4,1.0,0,0,750
+155519,"Araldica, Moscato d’Asti",Araldica,Italy,,,SWEET4,ACIDITY2,BODY1,TANNIN1,2.0,32000,2014,750
+153614,Besitos Rose,Besitos,Spain,11,8~10,SWEET4,ACIDITY2,BODY2,TANNIN1,4.0,0,2012,750
+161126,"Clemens Busch, Marienburg 1 Lage Auslese",Clemens Busch,Germany,,,SWEET4,ACIDITY2,BODY4,TANNIN1,2.0,210000,2013,750
+153433,"Robert Mondavi, Moscato d'oro",Robert Mondavi,USA,8,6~8,SWEET4,ACIDITY1,BODY3,TANNIN1,2.0,61000,2013,375
+140585,Valdivieso Sparkling Moscato,Valdivieso,Chile,12,8~10,SWEET4,ACIDITY2,BODY3,TANNIN1,3.0,25000,0,750
+146252,"Warburn Estate, Gossips Sweet Lip's",Warburn Estate,Australia,11,10~12,SWEET4,ACIDITY2,BODY3,TANNIN1,2.0,0,2008,750
+166486,"Lost Angel, Moscato",Lost Angel,USA,11~12,6~8,SWEET4,ACIDITY2,BODY2,TANNIN1,2.0,0,0,750
+166323,"Bodegas Menade, Sauvignon Dulce",Bodegas Menade,Spain,,,SWEET4,ACIDITY2,BODY4,TANNIN1,2.0,42000,2019,500
+160871,"Vigneti del Vulture, Sensuale Moscato",Vigneti del Vulture,Italy,9~10,6~8,SWEET4,ACIDITY2,BODY3,TANNIN1,2.0,53000,2018,750
+152982,"Caldirola, Bon Bon",Caldirola,Italy,10,12~14,SWEET4,ACIDITY2,BODY3,TANNIN2,1.0,0,0,750
+138559,"Campo di Sasso, Baron Bornemisza Tokaji Aszu 6 Puttonyos",Campo di Sasso,Hungary,,,SWEET5,ACIDITY2,BODY4,TANNIN1,1.0,0,1993,750
+162738,"Sileni, Grand Reserve Last Harvest Semillon",Sileni Estate,New Zealand,9~10,6~8,SWEET5,ACIDITY3,BODY4,TANNIN1,2.0,58000,2019,375
+166761,"Moselland, Bernkasteler Kurfurstlay",Moselland,Germany,8.5~9.5,6~8,SWEET5,ACIDITY2,BODY2,TANNIN1,2.0,0,0,750
+139854,"Dr.Loosen, Riesling Eiswein",DrLoosen,Germany,,,SWEET5,ACIDITY4,BODY4,TANNIN1,2.0,0,2002,750
+148437,Classicvines Botrytis Cabernet Sauvignon Premium,Pacvest Wines,Australia,8~9,12~14,SWEET5,ACIDITY2,BODY5,TANNIN2,1.0,0,2009,375
+160729,Samos Nectar,UWC Samos,Greece,14,6~8,SWEET5,ACIDITY4,BODY4,TANNIN1,2.0,65000,2010,500
+162463,"Pillitteri, Frozen Tundra Vidal Icewine",Pillitteri Estate,Canada,11~12,4~6,SWEET5,ACIDITY3,BODY4,TANNIN1,2.0,99000,2016,750
+139803,Henry of Pelham Cabernet Franc,Henry of Pelham,Canada,,,SWEET5,ACIDITY3,BODY4,TANNIN1,1.0,89000,2003,375
+165174,"Bench1775 Winery, Whistler Icewine Sauvignon Blanc",1775  Bench1775 Winery,Canada,,,SWEET5,ACIDITY3,BODY3,TANNIN1,2.0,0,2015,200
+163253,"Accademia, Amaretto",Accademia,Italy,24,10~12,SWEET5,ACIDITY3,BODY2,TANNIN1,5.0,60000,0,1000
+162003,20 Bees Vidal Icewine,Diamond Estates,Canada,,,SWEET5,ACIDITY4,BODY4,TANNIN1,2.0,35000,2014,375
+157615,Blandy's Duke of Clarence  Madeira,Blandys Madeira,Portugal,,,SWEET5,ACIDITY3,BODY5,TANNIN1,5.0,69000,0,750
+163258,"Tessari, Tre Colli",Tessari,Italy,13~14,8~10,SWEET5,ACIDITY2,BODY5,TANNIN1,2.0,0,2015,375
+158278,"Trivento, Late Harvest",Trivento Bodegas y Vinedos,Argentina,11.5~12.5,6~8,SWEET5,ACIDITY2,BODY5,TANNIN1,2.0,0,2015,500
+144659,Quinta de Terra Feita Vintage Port,Taylor Fladgate yeatman,Portugal,,,SWEET5,ACIDITY3,BODY5,TANNIN2,5.0,0,0,750
+137802,Canadian Dream Icewine,Pillitteri Estate,Canada,11,6~8,SWEET5,ACIDITY2,BODY3,TANNIN1,2.0,0,2006,375
+146649,Yarden Heights,Golan Heights  Yarden,Israel,9,6~8,SWEET5,ACIDITY2,BODY5,TANNIN1,2.0,0,2006,375
+162118,"Oremus, Tokaji Aszu 3 Puttonyos",Tokaj Oremus,Hungary,,,SWEET5,ACIDITY2,BODY4,TANNIN1,2.0,66000,2010,500
+159954,Oremus Tokaji Aszu 5 Puttonyos,Tokaj Oremus,Hungary,,,SWEET5,ACIDITY3,BODY5,TANNIN1,2.0,153000,2007,500
+148417,"Binger St. Rochunskapelle, Silvaner Eiswein",Binger St Rochunskapelle,Germany,7.5,6~8,SWEET5,ACIDITY2,BODY2,TANNIN1,2.0,0,2008,375

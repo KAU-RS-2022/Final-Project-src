@@ -1,0 +1,62 @@
+.circle{
+  display: inline-block;
+  margin-top: 40px;
+	align-items: center;
+	justify-content: center;
+
+  width:350px;
+  height:350px;
+
+  border: 0;
+  /* text-indent:-9999px;  */
+  // background-image: 
+  
+}
+
+.home-page .start-survey {
+  height: 400px;
+  background-image: url("../pages/img/web1_img1.jpg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.home-page .start-link{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.wine_icon{
+  // display: inline-block;
+  // position: absolute;
+  // top: 160px;
+  // right: 240px;
+	// align-items: center;
+	// justify-content: center;
+  margin : auto 0px;
+  width:10rem;
+  height:10rem;
+
+  border: 0;
+  /* text-indent:-9999px;  */
+  background-image: url("../pages/img/web1_1.svg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center; /* 좌우 상하 center */
+}
+
+.help-text{
+  margin-top: 50px;
+	margin-left: 30px;
+	font-size:20px;
+	font-weight: 10;
+	text-align: center;
+	color: #5C4766;
+}
+

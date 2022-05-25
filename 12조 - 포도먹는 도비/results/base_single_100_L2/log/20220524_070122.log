@@ -1,0 +1,167 @@
+[Tue May 24 07:01:22 2022]starts experiments setting base_single_100_L2
+=> creating model ...
+SiameseNetwork(
+  (fc1): Sequential(
+    (0): Linear(in_features=5, out_features=32, bias=True)
+    (1): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Linear(in_features=32, out_features=32, bias=True)
+    (4): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU(inplace=True)
+    (6): Linear(in_features=32, out_features=16, bias=True)
+  )
+  (fc2): Sequential(
+    (0): Linear(in_features=32, out_features=32, bias=True)
+    (1): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Linear(in_features=32, out_features=32, bias=True)
+    (4): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU(inplace=True)
+    (6): Linear(in_features=32, out_features=1, bias=True)
+  )
+)
+SYS:
+  EXP_NAME: base_single_100_L2
+  OUTPUT_DIR: results/base_single_100_L2/
+  GPUS: 0
+  WORKERS: 8
+  PIN_MEMORY: True
+  LOCAL_RANK: 
+TRAIN:
+  RESUME: 
+  START_EPOCH: 1
+  END_EPOCH: 100
+  BATCH_SIZE: 256
+  SEED: 8967
+  CUDNN:
+    BENCHMARK: True
+    DETERMINISTIC: False
+    ENABLED: True
+  OPT:
+    LR: 0.001
+    NAME: Adam
+    MOMENTUM: 0.9
+  PRINT_FREQ: 50
+  BATCH_SIZE_VAL: 16
+MODEL:
+  NAME: fullmodel
+  BB_PRETRAINED: 
+  FREEZE_BN: 
+  NBB_KEYWORDS: []
+  LATERAL_CONNECTION: True
+  POSITION_ENCODING: False
+  SEG:
+    NAME: ctx48
+    FREEZE: True
+    WEIGHT_PATH: models/ctx48_7795.pth.tar
+    LATTERAL: [48, 64, 80, 96, 112]
+  DEPTH:
+    NAME: depth
+    CH:
+      BB: [3, 18, 36]
+      BASE: [36, 72, 120, 180, 252]
+      SELF_CTX: [54, 72, 90, 108, 126]
+      SEG_CTX: [18, 24, 30, 36, 42]
+      GLOB_CTX: [36, 48, 60, 72, 84]
+      LATTERAL: [72, 120, 180, 252, 336]
+  POSE:
+    NAME: pose
+    CH:
+      BB: [6, 12, 24]
+      BASE: [24, 48, 80, 120, 168, 224, 288]
+      SELF_CTX: [24, 32, 40, 48, 56, 64]
+DATA:
+  SET: kittiDataset
+  SPLIT: eigen_zhou
+  ROOT: 
+  TRAIN_SPLIT: train
+  VAL_SPLIT: val
+  TEST_SPLIT: test
+  FRAME_IDS: [0, -1, 1, 's']
+  STEREO_OPTION: True
+  SHUFFLE: False
+  DROP_LAST: True
+  HEIGHT: 320
+  WIDTH: 1024
+  MIN_DEPTH: 0.1
+  MAX_DEPTH: 100
+  AUG:
+    BRIGHTNESS: [0.8, 1.2]
+    CONTRAST: [0.8, 1.2]
+    SATURATION: [0.8, 1.2]
+    HUE: [-0.1, 0.1]
+LOSS:
+  DISP_SMOOTH: 0.001
+  METRIC: ['de/abs_rel', 'de/sq_rel', 'de/rms', 'de/log_rms', 'da/a1', 'da/a2', 'da/a3', 'silog']
+
+starts training
+Epoch: [1/100](0.23%) [50/217] Data 0.000 (0.004) Batch 0.008 (0.013) Remain 00:04:45 Loss1 0.35048360 Loss2 0.37709457 lr [0.001].
+
+Epoch: [1/100](0.46%) [100/217] Data 0.001 (0.003) Batch 0.010 (0.012) Remain 00:04:14 Loss1 0.32929102 Loss2 0.31373769 lr [0.001].
+
+Epoch: [1/100](0.69%) [150/217] Data 0.001 (0.002) Batch 0.010 (0.011) Remain 00:03:52 Loss1 0.30061477 Loss2 0.32445407 lr [0.001].
+
+Epoch: [1/100](0.92%) [200/217] Data 0.001 (0.002) Batch 0.009 (0.010) Remain 00:03:43 Loss1 0.28769577 Loss2 0.30729353 lr [0.001].
+
+Loss_train: 0.6748600668
+Best loss: 0.6748600668072151  Best Epoch: 1
+Epoch: [2/100](1.23%) [50/217] Data 0.001 (0.004) Batch 0.010 (0.013) Remain 00:04:36 Loss1 0.28168461 Loss2 0.31607676 lr [0.001].
+
+Epoch: [2/100](1.46%) [100/217] Data 0.001 (0.003) Batch 0.008 (0.012) Remain 00:04:12 Loss1 0.23772934 Loss2 0.25118116 lr [0.001].
+
+Epoch: [2/100](1.69%) [150/217] Data 0.000 (0.002) Batch 0.007 (0.011) Remain 00:03:50 Loss1 0.19779903 Loss2 0.29816276 lr [0.001].
+
+Epoch: [2/100](1.92%) [200/217] Data 0.001 (0.002) Batch 0.008 (0.010) Remain 00:03:40 Loss1 0.20387471 Loss2 0.24811822 lr [0.001].
+
+Loss_train: 0.5039924559
+Best loss: 0.5039924558955953  Best Epoch: 2
+Epoch: [3/100](2.23%) [50/217] Data 0.001 (0.004) Batch 0.009 (0.012) Remain 00:04:20 Loss1 0.20232655 Loss2 0.24830888 lr [0.001].
+
+Epoch: [3/100](2.46%) [100/217] Data 0.001 (0.003) Batch 0.010 (0.011) Remain 00:03:51 Loss1 0.17762037 Loss2 0.23488207 lr [0.001].
+
+Epoch: [3/100](2.69%) [150/217] Data 0.000 (0.002) Batch 0.007 (0.010) Remain 00:03:31 Loss1 0.16109744 Loss2 0.28967130 lr [0.001].
+
+Epoch: [3/100](2.92%) [200/217] Data 0.001 (0.002) Batch 0.009 (0.010) Remain 00:03:20 Loss1 0.12551433 Loss2 0.20775452 lr [0.001].
+
+Loss_train: 0.4054353301
+Best loss: 0.4054353301014219  Best Epoch: 3
+Epoch: [4/100](3.23%) [50/217] Data 0.001 (0.004) Batch 0.011 (0.012) Remain 00:04:17 Loss1 0.14145283 Loss2 0.22025523 lr [0.001].
+
+Epoch: [4/100](3.46%) [100/217] Data 0.000 (0.003) Batch 0.008 (0.011) Remain 00:03:50 Loss1 0.10632645 Loss2 0.18240908 lr [0.001].
+
+Epoch: [4/100](3.69%) [150/217] Data 0.000 (0.002) Batch 0.009 (0.010) Remain 00:03:32 Loss1 0.12820596 Loss2 0.20440769 lr [0.001].
+
+Epoch: [4/100](3.92%) [200/217] Data 0.001 (0.002) Batch 0.009 (0.010) Remain 00:03:23 Loss1 0.14098948 Loss2 0.20056240 lr [0.001].
+
+Loss_train: 0.3500307905
+Best loss: 0.3500307904822486  Best Epoch: 4
+Epoch: [5/100](4.23%) [50/217] Data 0.001 (0.004) Batch 0.008 (0.012) Remain 00:04:18 Loss1 0.16173594 Loss2 0.16780138 lr [0.001].
+
+Epoch: [5/100](4.46%) [100/217] Data 0.000 (0.003) Batch 0.008 (0.011) Remain 00:03:52 Loss1 0.12717575 Loss2 0.16964377 lr [0.001].
+
+Epoch: [5/100](4.69%) [150/217] Data 0.000 (0.002) Batch 0.014 (0.010) Remain 00:03:36 Loss1 0.11576667 Loss2 0.15566719 lr [0.001].
+
+Epoch: [5/100](4.92%) [200/217] Data 0.001 (0.002) Batch 0.008 (0.010) Remain 00:03:27 Loss1 0.17768432 Loss2 0.16082095 lr [0.001].
+
+Loss_train: 0.3126307039
+Best loss: 0.3126307039216916  Best Epoch: 5
+Epoch: [6/100](5.23%) [50/217] Data 0.000 (0.004) Batch 0.008 (0.013) Remain 00:04:17 Loss1 0.19167285 Loss2 0.20570138 lr [0.001].
+
+Epoch: [6/100](5.46%) [100/217] Data 0.001 (0.003) Batch 0.008 (0.011) Remain 00:03:48 Loss1 0.12694955 Loss2 0.18519619 lr [0.001].
+
+Epoch: [6/100](5.69%) [150/217] Data 0.001 (0.002) Batch 0.009 (0.010) Remain 00:03:32 Loss1 0.14281774 Loss2 0.18320951 lr [0.001].
+
+Epoch: [6/100](5.92%) [200/217] Data 0.001 (0.002) Batch 0.007 (0.010) Remain 00:03:17 Loss1 0.13314641 Loss2 0.12073735 lr [0.001].
+
+Loss_train: 0.2980266703
+Best loss: 0.2980266702683291  Best Epoch: 6
+Epoch: [7/100](6.23%) [50/217] Data 0.000 (0.004) Batch 0.007 (0.012) Remain 00:04:09 Loss1 0.10188280 Loss2 0.14953068 lr [0.001].
+
+Epoch: [7/100](6.46%) [100/217] Data 0.001 (0.003) Batch 0.011 (0.011) Remain 00:03:44 Loss1 0.15778925 Loss2 0.16058230 lr [0.001].
+
+Epoch: [7/100](6.69%) [150/217] Data 0.000 (0.002) Batch 0.008 (0.010) Remain 00:03:28 Loss1 0.16207424 Loss2 0.16660638 lr [0.001].
+
+Epoch: [7/100](6.92%) [200/217] Data 0.000 (0.002) Batch 0.008 (0.010) Remain 00:03:20 Loss1 0.10219964 Loss2 0.17579514 lr [0.001].
+
+Loss_train: 0.2820347258
+Best loss: 0.28203472577481775  Best Epoch: 7

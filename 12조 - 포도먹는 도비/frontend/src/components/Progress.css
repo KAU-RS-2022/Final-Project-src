@@ -1,0 +1,109 @@
+.progress h1 {
+  top: 30px;
+  margin : 40px;
+  color: #5C4766;
+  font-weight:800;
+  font-size:20px;
+		text-align: center;
+}
+
+.progress .progress-container{
+  padding : 10px;
+  background-color: #420065;
+  border-radius: 5px;
+}
+
+.check{
+  display: inline-block;
+  margin-top: 40px;
+  right: 50px;
+
+	align-items: left;
+	justify-content: left;
+
+  width:70px;
+  height:70px;
+
+  border: 0;
+  /* text-indent:-9999px;  */
+  background-image: url("../pages/img/web3_check_icon.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left; /* 좌우 상하 center */
+}
+
+.arrow1{
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 10px;
+
+	align-items: left;
+	justify-content: left;
+
+  width:60px;
+  height:60px;
+
+  border: 0;
+  /* text-indent:-9999px;  */
+  background-image: url("../pages/img/web3_arrow_icon.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left; /* 좌우 상하 center */
+}
+
+.brain{
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 10px;
+
+	align-items: left;
+	justify-content: left;
+
+  width:80px;
+  height:80px;
+
+  border: 0;
+  /* text-indent:-9999px;  */
+  background-image: url("../pages/img/web3_brain_icon.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left; /* 좌우 상하 center */
+}
+
+.arrow2{
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 10px;
+
+	align-items: left;
+	justify-content: left;
+
+  width:60px;
+  height:60px;
+
+  border: 0;
+  /* text-indent:-9999px;  */
+  background-image: url("../pages/img/web3_arrow_icon.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left; /* 좌우 상하 center */
+}
+
+.wine{
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 10px;
+
+	align-items: left;
+	justify-content: left;
+
+  width:70px;
+  height:70px;
+
+  border: 0;
+  /* text-indent:-9999px;  */
+  background-image: url("../pages/img/web3_wine_icon.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left; /* 좌우 상하 center */
+}

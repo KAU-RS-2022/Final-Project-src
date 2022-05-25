@@ -1,0 +1,88 @@
+[Sun May 22 08:26:11 2022]starts experiments setting base_single_100_normalize
+=> creating model ...
+SiameseNetwork(
+  (fc1): Sequential(
+    (0): Linear(in_features=5, out_features=32, bias=True)
+    (1): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Linear(in_features=32, out_features=32, bias=True)
+    (4): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU(inplace=True)
+    (6): Linear(in_features=32, out_features=5, bias=True)
+  )
+)
+SYS:
+  EXP_NAME: base_single_100_normalize
+  OUTPUT_DIR: results/base_single_100_normalize/
+  GPUS: 0
+  WORKERS: 8
+  PIN_MEMORY: True
+  LOCAL_RANK: 
+TRAIN:
+  RESUME: 
+  START_EPOCH: 1
+  END_EPOCH: 100
+  BATCH_SIZE: 256
+  SEED: 8967
+  CUDNN:
+    BENCHMARK: True
+    DETERMINISTIC: False
+    ENABLED: True
+  OPT:
+    LR: 0.01
+    NAME: Adam
+    MOMENTUM: 0.9
+  PRINT_FREQ: 50
+  BATCH_SIZE_VAL: 16
+MODEL:
+  NAME: fullmodel
+  BB_PRETRAINED: 
+  FREEZE_BN: 
+  NBB_KEYWORDS: []
+  LATERAL_CONNECTION: True
+  POSITION_ENCODING: False
+  SEG:
+    NAME: ctx48
+    FREEZE: True
+    WEIGHT_PATH: models/ctx48_7795.pth.tar
+    LATTERAL: [48, 64, 80, 96, 112]
+  DEPTH:
+    NAME: depth
+    CH:
+      BB: [3, 18, 36]
+      BASE: [36, 72, 120, 180, 252]
+      SELF_CTX: [54, 72, 90, 108, 126]
+      SEG_CTX: [18, 24, 30, 36, 42]
+      GLOB_CTX: [36, 48, 60, 72, 84]
+      LATTERAL: [72, 120, 180, 252, 336]
+  POSE:
+    NAME: pose
+    CH:
+      BB: [6, 12, 24]
+      BASE: [24, 48, 80, 120, 168, 224, 288]
+      SELF_CTX: [24, 32, 40, 48, 56, 64]
+DATA:
+  SET: kittiDataset
+  SPLIT: eigen_zhou
+  ROOT: 
+  TRAIN_SPLIT: train
+  VAL_SPLIT: val
+  TEST_SPLIT: test
+  FRAME_IDS: [0, -1, 1, 's']
+  STEREO_OPTION: True
+  SHUFFLE: False
+  DROP_LAST: True
+  HEIGHT: 320
+  WIDTH: 1024
+  MIN_DEPTH: 0.1
+  MAX_DEPTH: 100
+  AUG:
+    BRIGHTNESS: [0.8, 1.2]
+    CONTRAST: [0.8, 1.2]
+    SATURATION: [0.8, 1.2]
+    HUE: [-0.1, 0.1]
+LOSS:
+  DISP_SMOOTH: 0.001
+  METRIC: ['de/abs_rel', 'de/sq_rel', 'de/rms', 'de/log_rms', 'da/a1', 'da/a2', 'da/a3', 'silog']
+
+starts training

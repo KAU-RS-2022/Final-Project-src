@@ -1,0 +1,19 @@
+.title{
+	font-family: 'Nunito', sans-serif;
+    margin-top: 20;
+		font-weight: lighter;
+		text-align: center;
+}
+
+hr {
+    width : 50%;
+  }
+  
+  .hr-solid {
+    border : 0px;
+    border-top: 3px solid #420065;
+    width: 400px;
+    align-items: center;
+    
+  }
+
