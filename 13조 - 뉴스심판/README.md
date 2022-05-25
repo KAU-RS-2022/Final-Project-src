@@ -10,13 +10,13 @@ https://drive.google.com/drive/folders/1PMRRWkTosjai4f-7eFvms0DJ2t6hbFhU?usp=sha
 _google_colab 환경을 기반으로 하였습니다.   
 /gdrive 경로에 yolo, resnet 폴더를 위치해 주세요  
 img.zip 파일은 /gdrive/resnet 안에 압축을 해제해 주세요_
-
 <br/>
 
 _based on google_colab env.   
 please put yolo, resnet folder in path '/gdrive'  
 please unzip img.zip file in /gdrive/resnet_
 
+<br/>
 
 ### yolo folder
 
@@ -30,6 +30,7 @@ please unzip img.zip file in /gdrive/resnet_
   + weights file we trained in custom
 + image.c
   + modified to save labeled images
+<br/>
 
 ### resnet folder
 
@@ -42,7 +43,8 @@ please unzip img.zip file in /gdrive/resnet_
 + image_emb.npy
   + pre-trained model
 
-<br/>
+
+
 <br/>
 
 ## Yolov4.ipynb
@@ -56,9 +58,8 @@ please unzip img.zip file in /gdrive/resnet_
     + put arguments in code in advance to make it convenient to execute darknet with original weights
   + Yolo - Test
     + execute darknet with our custom weights 
+  <br/>
 
-<br/>
-   
   + ResNet - Get Files
     + make test dir and copy files from gdrive
   + ResNet - Import
@@ -70,13 +71,11 @@ please unzip img.zip file in /gdrive/resnet_
   + ResNet - Get Similarity
     + get similar images from input file
   + ResNet - Test
-    + execute codes
-
-<br/>
+    + execute codes 
+  <br/>
 
   + Final
     + run final model
-    <br/>
     <br/>
     
     + "OSError: [Errno 5] Input/output error:"  
